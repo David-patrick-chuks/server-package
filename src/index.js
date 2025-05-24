@@ -5,7 +5,10 @@ import { PORT } from "./config.js";
 
 const app = express();
 
-app.use(cors());
+// Allow all origins
+app.use(cors({
+  origin: true, // Allows all domains
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
