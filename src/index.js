@@ -2,7 +2,8 @@ import express from "express";
 import cors from "cors";
 import apiRouter from "./routes/api.js";
 import { PORT } from "./config.js";
-
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 
 // Allow all origins
