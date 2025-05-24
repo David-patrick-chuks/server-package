@@ -8,7 +8,7 @@ const app = express();
 
 // Allow all origins
 app.use(cors({
-  origin: true, // Allows all domains
+  origin: "*", // Allows all domains
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
